@@ -5,7 +5,7 @@ function createUser(action,settings){
     return new Promise((resolve,reject) => {
         var zd_client = zendesk.createClient({
             username:  action.params.USERNAME,
-            token: settings.TOKEN || action.params.TOKEN,
+            token: action.params.TOKEN || settings.TOKEN,
             remoteUri: `https://${action.params.COMPAGNY}.zendesk.com/api/v2`,
             oauth:false
           });
