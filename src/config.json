@@ -5,46 +5,47 @@
     "execProgram": "node",
     "main": "app.js",
     "version": "1.0.0",
-    "description": "",
-    "settings":[
-      {
-        "name":"TOKEN",
-        "viewName":"Token",
-        "type":"vault"
-      }
+    "description": "Zendesk Plugin",
+    "settings":
+    [
+        {
+            "name":"TOKEN",
+            "viewName":"Token",
+            "type":"vault"
+        }
     ],
-    "methods": [
-    {
-        "name": "createUser",
-        "viewName": "Create a user",
-        "params": [
-            {
-                "name": "USERNAME",
-                "viewName": "Username",
-                "type": "string"
-            },
-            {
-                "name": "TOKEN",
-                "viewName": "Token",
-                "type": "vault"
-            },
-            {
-                "name": "COMPAGNY",
-                "viewName": "Compagny",
-                "type": "string"
-            },
-            {
-                "name": "EMAIL",
-                "viewName": "Email",
-                "type": "string"
-            },
-            {
-                "name": "NAME",
-                "viewName": "Name",
-                "type": "string"
-            }
-        
-        ]
-    }
+    "methods": 
+    [
+        {
+            "name": "createUser",
+            "viewName": "Create a User",
+            "params": [
+                {
+                    "name": "USERNAME",
+                    "viewName": "Username",
+                    "type": "string"
+                },
+                {
+                    "name": "TOKEN",
+                    "viewName": "Token",
+                    "type": "vault"
+                },
+                {
+                    "name": "COMPAGNY",
+                    "viewName": "Compagny",
+                    "type": "string"
+                },
+                {
+                    "name": "EMAIL",
+                    "viewName": "Email",
+                    "type": "string"
+                },
+                {
+                    "name": "NAME",
+                    "viewName": "Name",
+                    "type": "string"
+                }
+            ]
+        }
     ]
-  }
+}
