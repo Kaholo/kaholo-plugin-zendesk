@@ -1,51 +1,50 @@
 {
-    "name": "Zendesk",
-    "type": "executer",
-    "imgUrl": "zendesk.png",
-    "execProgram": "node",
-    "main": "app.js",
-    "version": "1.0.0",
-    "description": "Zendesk Plugin",
-    "settings":
-    [
+  "name": "Zendesk",
+  "type": "executer",
+  "imgUrl": "zendesk.png",
+  "execProgram": "node",
+  "main": "app.js",
+  "version": "1.0.2",
+  "description": "Zendesk Plugin",
+  "settings": [
+    {
+      "name": "TOKEN",
+      "viewName": "Token",
+      "type": "vault"
+    }
+  ],
+  "methods": [
+    {
+      "name": "createUser",
+      "viewName": "Create a User",
+      "params": [
         {
-            "name":"TOKEN",
-            "viewName":"Token",
-            "type":"vault"
-        }
-    ],
-    "methods": 
-    [
+          "name": "USERNAME",
+          "viewName": "Username",
+          "type": "string"
+        },
         {
-            "name": "createUser",
-            "viewName": "Create a User",
-            "params": [
-                {
-                    "name": "USERNAME",
-                    "viewName": "Username",
-                    "type": "string"
-                },
-                {
-                    "name": "TOKEN",
-                    "viewName": "Token",
-                    "type": "vault"
-                },
-                {
-                    "name": "COMPAGNY",
-                    "viewName": "Compagny",
-                    "type": "string"
-                },
-                {
-                    "name": "EMAIL",
-                    "viewName": "Email",
-                    "type": "string"
-                },
-                {
-                    "name": "NAME",
-                    "viewName": "Name",
-                    "type": "string"
-                }
-            ]
+          "name": "TOKEN",
+          "viewName": "Token",
+          "type": "vault"
+        },
+        {
+          "name": "COMPAGNY",
+          "viewName": "Compagny",
+          "type": "string"
+        },
+        {
+          "name": "EMAIL",
+          "viewName": "Email",
+          "type": "string"
+        },
+        {
+          "name": "NAME",
+          "viewName": "Name",
+          "type": "string"
         }
-    ]
+      ]
+    }
+  ],
+  "category": "ISSUE TRACKING"
 }
